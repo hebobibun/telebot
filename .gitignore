@@ -1,0 +1,26 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# env files
+*.env
+
+# Compiled Go binary
+*.exe
+*.exe~
+*.dll
+*.exe
+*.so
+*.out
+telebot
+
+# Log files and directories
+*.log
+logs/
+
+# Binary
+bin/
+
+# Dependency directories
+/vendor/
