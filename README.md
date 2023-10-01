@@ -38,6 +38,11 @@ This telebot is a basic Telegram bot that responds to commands and messages. It'
 Start the bot by sending the /start command.
 Greet the bot with /hello to receive a friendly response.
 
+### Deployment
+This project is available to be deployed to Railway
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app?referralCode=hebobibun)
+
 ### Contributing
 Contributions are welcome! If you have ideas for improvements or new features, please open an issue or submit a pull request.
 
