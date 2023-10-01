@@ -2,8 +2,9 @@ package bot
 
 import (
 	"log"
+	"os"
 	"github.com/go-telegram-bot-api/telegram-bot-api"
-	"github.com/spf13/viper"
+	// "github.com/spf13/viper"
 	"telebot/handlers"
 )
 
@@ -12,18 +13,24 @@ type Bot struct {
 }
 
 func InitializeBot() *Bot {
-	// Configure Viper to read from the .env file
-	viper.SetConfigFile(".env")
+	// // Configure Viper to read from the .env file
+	// viper.SetConfigFile(".env")
 
-	// Check if the .env file exists
-	if err := viper.ReadInConfig(); err != nil {
-		log.Fatalf("Error reading .env file: %v", err)
-	}
+	// // Check if the .env file exists
+	// if err := viper.ReadInConfig(); err != nil {
+	// 	log.Fatalf("Error reading .env file: %v", err)
+	// }
 
-	// Retrieve the API token using Viper
-	apiToken := viper.GetString("TELEGRAM_BOT_API_TOKEN")
+	// // Retrieve the API token using Viper
+	// apiToken := viper.GetString("TELEGRAM_BOT_API_TOKEN")
+	// if apiToken == "" {
+	// 	log.Fatal("API token not found in .env file. Please make sure the .env file contains TELEGRAM_BOT_API_TOKEN.")
+	// }
+
+	// Retrieve the API token using os.Getenv
+	apiToken := os.Getenv("TELEGRAM_BOT_API_TOKEN")
 	if apiToken == "" {
-		log.Fatal("API token not found in .env file. Please make sure the .env file contains TELEGRAM_BOT_API_TOKEN.")
+		log.Fatal("API token not found in environment variables. Please make sure you have set TELEGRAM_BOT_API_TOKEN.")
 	}
 
 	// Initialize the bot with the retrieved API token

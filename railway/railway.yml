@@ -1,0 +1,6 @@
+name: telebot
+services:
+  - name: app
+    env:
+      - key: TELEGRAM_BOT_API_TOKEN
+        secret: true # Mark this as a secret
