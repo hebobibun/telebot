@@ -39,7 +39,7 @@ Start the bot by sending the /start command.
 Greet the bot with /hello to receive a friendly response.
 
 ### Deployment
-This project is available to be deployed to Railway
+This project is configured and ready for deployment on Railway.
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app?referralCode=hebobibun)
 
