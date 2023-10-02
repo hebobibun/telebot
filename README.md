@@ -1,6 +1,6 @@
 # TELEBOT
 
-Welcome to Telebot, a simple example Telegram bot built in Go and using [telegram-bot-api](https://github.com/go-telegram-bot-api/telegram-bot-api)
+Welcome to Telebot, a simple example Telegram bot built in Golang and using [telegram-bot-api](https://github.com/go-telegram-bot-api/telegram-bot-api)
 
 ## Description
 
