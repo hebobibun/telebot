@@ -3,7 +3,9 @@ package bot
 import (
 	"log"
 	"os"
-	"github.com/go-telegram-bot-api/telegram-bot-api"
+
+	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
+
 	// "github.com/spf13/viper"
 	"telebot/handlers"
 )
