@@ -37,4 +37,4 @@ jobs:
             docker stop ${{ secrets.CONTAINER }}
             docker rm ${{ secrets.CONTAINER }}
             docker rmi ${{ secrets.DOCKER_USER }}/${{ secrets.IMAGE }}
-            docker run --name ${{ secrets.CONTAINER }} -e TELEGRAM_BOT_API_TOKEN=${{ secrets.TELEGRAM_BOT_API_TOKEN }} -d -p 80:8000 ${{ secrets.DOCKER_USER }}/${{ secrets.IMAGE }}
+            docker run --name ${{ secrets.CONTAINER }} -e TELEGRAM_BOT_API_TOKEN=${{ secrets.TELEGRAM_BOT_API_TOKEN }} -d -p 8081:8000 ${{ secrets.DOCKER_USER }}/${{ secrets.IMAGE }}
